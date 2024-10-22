@@ -1,0 +1,70 @@
+/* Styling the colorful and attractive calculator */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .calculator {
+    width: 350px;
+    padding: 20px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #6a89cc, #82ccdd);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  #display {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #34495e;
+    color: white;
+    font-size: 2.5rem;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 12px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  button {
+    height: 65px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #ff6b6b, #ffcccb);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    background-color: #ff9a9e;
+  }
+  
+  .zero {
+    grid-column: span 2;
+  }
+  
+  .equal {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+  }
+  
+  .equal:hover {
+    background: linear-gradient(to right, #9d50bb, #6e48aa);
+  }
+  
